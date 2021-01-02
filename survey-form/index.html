@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="description"></p>
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Nome:</label>
+        <input type="text" name="name" id="name" placeholder="Insira o seu nome">
+        
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Insira o seu melhor email">
+        
+        <label id="number-label" for="number">Quantidade de Convidados:</label>
+        <input type="number" min="0" max="1000" name="number" id="number" placeholder="Insira a quantidade de convidados da festa">
+
+        <label for="dropdown">Selecione o pacote:</label>
+        <select name="dropdown" id="dropdown">
+            <option value="diamont">Diamante</option>
+            <option value="gold">Ouro</option>
+            <option value="silver">Prata</option>
+            <option value="bronze">Bronze</option>
+        </select>
+
+        <label for="comments">Comentários Adicionais</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        
+        <button id="submit">Enviar dados</button>
+    </form>
+</body>
+</html>
